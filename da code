@@ -98,15 +98,15 @@
                 <option value="4">4</option>
             </select>
             <br><br>
-
+            <!-- This allows the user to input their GPA for the last 30 credits -->
             <label>Last 30 GPA</label>
             <input id="last30GPA" type="number">
             <br><br>
-
+            <!-- This allows the user to input their overall GPA -->
             <label>Overall GPA</label>
             <input id="overallGPA" type="number">
             <br><br>
-
+            <!-- This will allow us to reference the calculation -->
             <button type="button" onclick="calcGPA()">Calculate GPA</button>
             <!-- This label has the id coreGPA to reference the function -->
             <label id="coreGPA"></label>

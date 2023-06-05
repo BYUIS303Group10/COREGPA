@@ -6,6 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IS CORE GPA</title>
+
+        <style>
+            body {
+                background-color: lightgray;
+
+            }
+        </style>
+
         <script>
             //This function is called when the user clicks on the calcGPA button
             function calcGPA()
@@ -26,77 +34,82 @@
                 document.getElementById("coreGPA").innerHTML = "Core GPA is " + fFinalGPA;
             }
         </script>
-        <link rel = "stylesheet" href = "styles_CoreGPA.css"/>
-</head>
+    </head>
 
-<body>
-    <form>
-        <label>Acc200 Grade</label>
-        <select id ="acc200Grade">
-            <option value="4.0">A</option>
-            <option value="3.7">A-</option>
-            <option value="3.4">B+</option>
-            <option value="3.0">B</option>
-            <option value="2.7">B-</option>
-            <option value="2.4">C+</option>
-            <option value="2.0">C</option>
-            <option value="1.7">C-</option>
-            <option value="1.4">D+</option>
-            <option value="1.0">D</option>
-            <option value="0.7">D-</option>
-            <option value="0">E</option>
-        </select>
+    <body>
+        <form>
+            <label>Acc200 Grade</label>
+            <select id ="acc200Grade">
+                <option value="4.0">A</option>
+                <option value="3.7">A-</option>
+                <option value="3.4">B+</option>
+                <option value="3.0">B</option>
+                <option value="2.7">B-</option>
+                <option value="2.4">C+</option>
+                <option value="2.0">C</option>
+                <option value="1.7">C-</option>
+                <option value="1.4">D+</option>
+                <option value="1.0">D</option>
+                <option value="0.7">D-</option>
+                <option value="0">E</option>
+            </select>
+            <br><br>
 
-        <label>IS201 Grade</label>
-        <select id ="is201Grade">
-            <option value="4.0">A</option>
-            <option value="3.7">A-</option>
-            <option value="3.4">B+</option>
-            <option value="3.0">B</option>
-            <option value="2.7">B-</option>
-            <option value="2.4">C+</option>
-            <option value="2.0">C</option>
-            <option value="1.7">C-</option>
-            <option value="1.4">D+</option>
-            <option value="1.0">D</option>
-            <option value="0.7">D-</option>
-            <option value="0">E</option>
-        </select>
+            <label>IS201 Grade</label>
+            <select id ="is201Grade">
+                <option value="4.0">A</option>
+                <option value="3.7">A-</option>
+                <option value="3.4">B+</option>
+                <option value="3.0">B</option>
+                <option value="2.7">B-</option>
+                <option value="2.4">C+</option>
+                <option value="2.0">C</option>
+                <option value="1.7">C-</option>
+                <option value="1.4">D+</option>
+                <option value="1.0">D</option>
+                <option value="0.7">D-</option>
+                <option value="0">E</option>
+            </select>
+            <br><br>
 
-        <label>IS303 Grade</label>
-        <select id ="is303Grade">
-            <option value="4.0">A</option>
-            <option value="3.7">A-</option>
-            <option value="3.4">B+</option>
-            <option value="3.0">B</option>
-            <option value="2.7">B-</option>
-            <option value="2.4">C+</option>
-            <option value="2.0">C</option>
-            <option value="1.7">C-</option>
-            <option value="1.4">D+</option>
-            <option value="1.0">D</option>
-            <option value="0.7">D-</option>
-            <option value="0">E</option>
-        </select>
+            <label>IS303 Grade</label>
+            <select id ="is303Grade">
+                <option value="4.0">A</option>
+                <option value="3.7">A-</option>
+                <option value="3.4">B+</option>
+                <option value="3.0">B</option>
+                <option value="2.7">B-</option>
+                <option value="2.4">C+</option>
+                <option value="2.0">C</option>
+                <option value="1.7">C-</option>
+                <option value="1.4">D+</option>
+                <option value="1.0">D</option>
+                <option value="0.7">D-</option>
+                <option value="0">E</option>
+            </select>
+            <br><br>
 
-        <label>Essay Score</label>
-        <select id ="essay">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
+            <label>Essay Score</label>
+            <select id ="essay">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br><br>
 
-        <label>Last 30 GPA</label>
-        <input id="last30GPA" type="number">
+            <label>Last 30 GPA</label>
+            <input id="last30GPA" type="number">
+            <br><br>
 
-        <label>Overall GPA</label>
-        <input id="overallGPA" type="number">
+            <label>Overall GPA</label>
+            <input id="overallGPA" type="number">
+            <br><br>
 
-        <button type="button" onclick="calcGPA()">Calculate GPA</button>
-        <!-- This label has the id coreGPA to reference the function -->
-        <label id="coreGPA"></label>
-    </form>
-
-</body></html>
+            <button type="button" onclick="calcGPA()">Calculate GPA</button>
+            <!-- This label has the id coreGPA to reference the function -->
+            <label id="coreGPA"></label>
+        </form>
+    </body>
+</html>

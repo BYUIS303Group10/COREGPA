@@ -38,6 +38,7 @@
 
     <body>
         <form>
+            <!-- Create an Accounting Grade Dropdown -->
             <label>Acc200 Grade</label>
             <select id ="acc200Grade">
                 <option value="4.0">A</option>
@@ -55,6 +56,7 @@
             </select>
             <br><br>
 
+            <!-- Create an IS201 Grade Dropdown -->
             <label>IS201 Grade</label>
             <select id ="is201Grade">
                 <option value="4.0">A</option>
@@ -72,6 +74,7 @@
             </select>
             <br><br>
 
+            <!-- Create an IS303 Grade Dropdown -->
             <label>IS303 Grade</label>
             <select id ="is303Grade">
                 <option value="4.0">A</option>
@@ -89,6 +92,7 @@
             </select>
             <br><br>
 
+            <!-- Create an Essay Score Dropdown -->
             <label>Essay Score</label>
             <select id ="essay">
                 <option value="0">0</option>
@@ -98,16 +102,20 @@
                 <option value="4">4</option>
             </select>
             <br><br>
-            <!-- This allows the user to input their GPA for the last 30 credits -->
+
+            <!-- Create a Last 30 GPA input -->
             <label>Last 30 GPA</label>
             <input id="last30GPA" type="number">
             <br><br>
-            <!-- This allows the user to input their overall GPA -->
+            
+            <!-- Create a Last 30 GPA input -->
             <label>Overall GPA</label>
             <input id="overallGPA" type="number">
             <br><br>
-            <!-- This will allow us to reference the calculation -->
+
+            <!-- Create a button that calls the calcGPA function -->
             <button type="button" onclick="calcGPA()">Calculate GPA</button>
+            
             <!-- This label has the id coreGPA to reference the function -->
             <label id="coreGPA"></label>
         </form>

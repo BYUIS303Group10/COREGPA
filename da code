@@ -31,7 +31,7 @@
 <body>
     <form>
         <label>Acc200 Grade</label>
-        <select name ="Acc200">
+        <select id ="acc200Grade">
             <option value="4.0">A</option>
             <option value="3.7">A-</option>
             <option value="3.4">B+</option>
@@ -47,7 +47,7 @@
         </select>
 
         <label>IS201 Grade</label>
-        <select name ="IS201">
+        <select id ="is201Grade">
             <option value="4.0">A</option>
             <option value="3.7">A-</option>
             <option value="3.4">B+</option>
@@ -63,7 +63,7 @@
         </select>
 
         <label>IS303 Grade</label>
-        <select name ="IS303">
+        <select id ="is303Grade">
             <option value="4.0">A</option>
             <option value="3.7">A-</option>
             <option value="3.4">B+</option>
@@ -79,23 +79,23 @@
         </select>
 
         <label>Essay Score</label>
-        <select name ="Essay">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
+        <select id ="essay">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
         </select>
 
         <label>Last 30 GPA</label>
-        <input name="last30GPA" type="number">
+        <input id="last30GPA" type="number">
 
         <label>Overall GPA</label>
-        <input name="overallGPA" type="number">
+        <input id="overallGPA" type="number">
 
         <button type="button" onclick="calcGPA()">Calculate GPA</button>
 
-        <!--insert html tag for displaying the calcualted GPA --> 
+        <label id="coreGPA"></label>
     </form>
 
 </body></html>

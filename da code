@@ -26,6 +26,7 @@
                 document.getElementById("coreGPA").innerHTML = "Core GPA is " + fFinalGPA;
             }
         </script>
+        <link rel = "stylesheet" href = "styles_CoreGPA.css"/>
 </head>
 
 <body>
@@ -94,7 +95,7 @@
         <input id="overallGPA" type="number">
 
         <button type="button" onclick="calcGPA()">Calculate GPA</button>
-
+        <!-- This label has the id coreGPA to reference the function -->
         <label id="coreGPA"></label>
     </form>
 
